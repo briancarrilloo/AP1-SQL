@@ -10,7 +10,7 @@
 <body>
     <header>
         <img class="logo" src="img/logo.png" alt="Logo">
-        <h1>Bienvenido alumno</h1>
+        <h1>Bienvenido exalumno</h1>
     </header>
 
     <main>
