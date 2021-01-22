@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Manuel Vázquez Montalbán</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <h1>Bienvenido</h1>
+    </header>
+    <main>
+        <div class="login">
+            <form action="login.php" method="POST">
+                <p class="loginTitle">Introduzca sus credenciales de acceso</p>
+                <div class="loginfield">
+                    <p>Nombre de usuario: </p>
+                    <input type="text" id="user" name="user" required/>
+                </div>
+                <div class="loginfield">
+                    <p>Contraseña: </p>
+                    <input type="password" id="password" name="password" required/>
+                </div>
+                <button type="submit">Acceder</button>
+            </form>
+            <form action="register.php">
+                <button name="register">Registrarse</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Creado por Brian Carrillo</p>
+    </footer>
+</body>
+
+</html>

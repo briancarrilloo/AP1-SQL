@@ -1,0 +1,71 @@
+header {
+    position: absolute;
+    width: 99%;
+    height: 80px;
+    background-color: #004d9c;
+    text-align: center;
+    top: 0;
+}
+
+h1 {
+    /*Font*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100%;
+    font-size: 35px;
+}
+
+img.logo {
+    height: 80px;
+    background-color: transparent;
+    float: left;
+}
+
+div.login {
+    margin: 10%;
+    margin-bottom: 0%;
+    padding: 10%;
+    text-align: center;
+    border: 2px solid #004d9c;
+    background-color: #72b3ff;
+}
+
+p.loginTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div.loginfield {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 40px;
+    background: #004d9c;
+    text-align: center;
+    /*Font*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+
+/*- - - Formulario de registro - - -*/
+div.register {
+    margin: 10%;
+    margin-bottom: 0%;
+    padding: 0%;
+    text-align: center;
+    border: 2px solid #004d9c;
+    background-color: #72b3ff;
+}
+
+button {
+    margin: 4px;
+    padding: 4px;
+}
