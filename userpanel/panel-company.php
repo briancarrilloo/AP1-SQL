@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Manuel Vázquez Montalbán</title>
-    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="../css/panel.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="img/logo.png" alt="Logo">
+        <img class="logo" src="../img/logo.png" alt="Logo">
         <h1>Bienvenida empresa</h1>
     </header>
 
@@ -17,7 +17,7 @@
         <div class="content">
             <?php
                 // Conexión                        
-                include 'db.php';
+                include '../db.php';
                 session_start();
 
                 //Comprobar si existen vacantes
@@ -53,9 +53,9 @@
                                 <td>" . $vacant['fpdual'] . "</td>
                                 <td>
                                     <form>
-                                        <a href='./vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
-                                        <a href='./vacant-edit.php?id=" . $vacant['id-vacant'] ."'>Editar</a>
-                                        <a href='./vacant-delete.php?id=" . $vacant['id-vacant'] ."'>Eliminar</a>
+                                        <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
+                                        <a href='./vacant-actions/vacant-edit.php?id=" . $vacant['id-vacant'] ."'>Editar</a>
+                                        <a href='./vacant-actions/vacant-delete.php?id=" . $vacant['id-vacant'] ."'>Eliminar</a>
                                     </form>
                                 </td>
                             </tr>";
@@ -70,7 +70,7 @@
                 SQLDisconnect($conn);
             ?>
             <br>
-            <form action="create-vacant.php">
+            <form action="vacant-actions/create-vacant.php">
                 <button class="BigButton">Crear nueva vacante</button>
             </form>
         </div>

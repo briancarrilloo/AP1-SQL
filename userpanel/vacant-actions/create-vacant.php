@@ -20,15 +20,15 @@
             <form action="create-vacant-action.php" method="POST">
                 <div class="field">
                     <p>Título: </p>
-                    <input class="title" type="text" id="title" name="title" required />
+                    <textarea name="title" id="title" cols="60" rows="1"></textarea>
                 </div>
                 <div class="field">
                     <p>Descripción del trabajo: </p>
-                    <input class="BigForm" type="text" id="desctrab" name="desctrab" required />
+                    <textarea name="desctrab" id="desctrab" cols="60" rows="5"></textarea>
                 </div>
                 <div class="field">
                     <p>Descripción del puesto: </p>
-                    <input class="BigForm" type="text" id="descpuesto" name="descpuesto" required />
+                    <textarea name="descpuesto" id="descpuesto" cols="60" rows="7"></textarea>
                 </div>
                 <div class="field">
                     <p>FP Dual: </p>

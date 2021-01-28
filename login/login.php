@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include 'db.php';
+    include '../db.php';
     $user = $_POST['user'];
     $password = $_POST['password'];
 
@@ -15,35 +15,27 @@
         switch ($roleid){
             case 1:
                 //alumno
-                header( 'Location: ./panel-alumn.php' );
+                header( 'Location: ../userpanel/panel-alumn.php' );
                 break;
             case 2:
-                //profesor
-                header( 'Location: ./panel-professor.php' );
+                //exalumno
+                header( 'Location: ../userpanel/panel-exalumn.php' );
                 break;
             case 3:
                 //empresa
                 $_SESSION["company"] = GetCompany($user);
-                header( 'Location: ./panel-company.php' );
-                break;
-            case 4:
-                //exalumno
-                header( 'Location: ./panel-exalumn.php' );
-                break;
-            case 5:
-                //administrator
-                header( 'Location: ./panel-administrator.php' );
+                header( 'Location: ../userpanel/panel-company.php' );
                 break;
         }
 
     } else{
         //Login failed
-        header( 'Location: ./failed.html' );
+        header( 'Location: failed.html' );
     }
 
     //Funciones
     function GoRegisterPage(){
-        header( 'Location: ./register.html' );
+        header( 'Location: ../register/register.html' );
     }
 
     function CheckLogin($user, $password){

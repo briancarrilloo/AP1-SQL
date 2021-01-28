@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Manuel Vázquez Montalbán</title>
-    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="../css/panel.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="img/logo.png" alt="Logo">
+        <img class="logo" src="../img/logo.png" alt="Logo">
         <h1>Bienvenido alumno</h1>
     </header>
 
@@ -17,7 +17,7 @@
         <div class="content">
             <?php
                 // Conexión                        
-                include 'db.php';
+                include '../db.php';
                 session_start();
 
                 //Comprobar si existen vacantes
@@ -53,8 +53,8 @@
                                 <td>" . $vacant['fpdual'] . "</td>
                                 <td>
                                     <form>
-                                        <a href='./vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
-                                        <a href='./vacant-view.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
+                                        <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
+                                        <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
                                     </form>
                                 </td>
                             </tr>";
@@ -63,7 +63,7 @@
                     } else {
                         //No existen vacantes
                         echo "<h2>No existen vacantes</h2>";
-                        echo "Esta empresa no ha creado ninguna vacante todavía. Pulse el botón para crear una.";
+                        echo "En estos momentos ninguna empresa tiene vacantes disponibles.";
                     }
                 }
                 SQLDisconnect($conn);

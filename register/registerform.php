@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include '../db.php';
 
     $role = $_POST['role'];
     $company = $_POST['company'];
@@ -17,6 +17,7 @@
         $sql = "insert into users values('$user', '$email', '$password', '$role', '$company', '$observations');";
         if (SQLExecute($sql)) {
             echo 'El usuario se ha creado correctamente.';
+            header('Location: ../index.html');
         } else {
             echo 'No se ha podido crear el usuario';
         }
@@ -46,7 +47,7 @@
 
     function GoBack()
     {
-        header('Location: ./login.html');
+        header('Location: ../index.html');
     }
 
     function Roles()

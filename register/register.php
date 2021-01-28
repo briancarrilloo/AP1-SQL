@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Manuel Vázquez Montalbán</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- <script type="text/javascript" src="js/role.js"></script> -->
+    <link rel="stylesheet" href="../css/styles.css">
     <script type="text/javascript">
 		function showDiv(div){
 		if(div.value == 3){
@@ -19,7 +18,7 @@
 
 <body>
     <header>
-        <img class="logo" src="img/logo.png" alt="Logo">
+        <img class="logo" src="../img/logo.png" alt="Logo">
         <h1>Formulario de registro</h1>
         
     </header>
@@ -32,7 +31,7 @@
                     <select class="role" name="role" onchange="showDiv(this)">
                         <?php
                             // Conexión                        
-                            include 'db.php';
+                            include '../db.php';
                             $conn = SQLConnect();
 
                             // Selección de bd
@@ -78,7 +77,7 @@
                 <button type="reset" value="Reset">Borrar</button>
                 
             </form>
-            <form action="index.html">
+            <form action="../index.html">
                 <button type="back" value="back">Volver</button>
             </form>
         </div>
