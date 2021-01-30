@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<?php
+    include '../check-session.php';
+    if(CheckSession(1)){
+        header( 'Location: ../session-expired.php' );
+    }
+?>
+
 <head>
     <meta charset="utf-8">
     <title>Manuel Vázquez Montalbán</title>
@@ -18,7 +25,7 @@
             <?php
                 // Conexión                        
                 include '../db.php';
-                session_start();
+                // session_start();
 
                 //Comprobar si existen vacantes
                 $conn = SQLConnect();
@@ -53,8 +60,8 @@
                                 <td>" . $vacant['fpdual'] . "</td>
                                 <td>
                                     <form>
-                                        <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
-                                        <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
+                                        <a class='button' href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
+                                        <a class='button' href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
                                     </form>
                                 </td>
                             </tr>";
@@ -73,7 +80,7 @@
     </main>
 
     <footer>
-        <p>Creado por Brian Carrillo</p>
+        <a class='closesession' href='../close-session.php'>Cerrar sesión</a>
     </footer>
 </body>
 </html>

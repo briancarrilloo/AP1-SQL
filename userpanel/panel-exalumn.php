@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="utf-8">
-    <title>Manuel Vázquez Montalbán</title>
-    <link rel="stylesheet" href="../css/panel.css">
-</head>
+<?php
+    include '../check-session.php';
+    if(CheckSession(2)){
+        header( 'Location: ../session-expired.php' );
+    }
+?>
 
 <body>
     <header>
@@ -73,7 +74,7 @@
     </main>
 
     <footer>
-        <p>Creado por Brian Carrillo</p>
+        <a class='closesession' href='../close-session.php'>Cerrar sesión</a>
     </footer>
 </body>
 </html>

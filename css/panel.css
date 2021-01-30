@@ -54,11 +54,12 @@ footer {
     width: 99%;
     height: 40px;
     background: #004d9c;
-    text-align: center;
     /*Font*/
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 table, th, td {
@@ -94,7 +95,7 @@ input.BigForm{
     width: 40%;
 }
 
-a{
+a.button{
     background-color: white;
     color: black;
     padding: 4px;
@@ -103,7 +104,19 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+a.button:hover{
     background-color: rgb(219, 219, 219);
     text-decoration: none;
+}
+
+a.closesession{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.closesession:hover{
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    text-align: center;
 }

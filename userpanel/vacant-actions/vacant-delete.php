@@ -1,4 +1,9 @@
 <?php
+    include '../check-session.php';
+    if(CheckSession(3)){
+        header( 'Location: ../session-expired.php' );
+    }
+
     include 'db.php';
     $id = $_GET['id'];
 

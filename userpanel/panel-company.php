@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<?php
+    include '../check-session.php';
+    if(CheckSession(3)){
+        header( 'Location: ../session-expired.php' );
+    }
+?>
+
 <head>
     <meta charset="utf-8">
     <title>Manuel Vázquez Montalbán</title>
@@ -10,7 +17,9 @@
 <body>
     <header>
         <img class="logo" src="../img/logo.png" alt="Logo">
-        <h1>Bienvenida empresa</h1>
+        <?php
+            echo "<h1>Bienvenida " . $_SESSION["company"] . "</h1>";
+        ?>
     </header>
 
     <main>
@@ -18,7 +27,6 @@
             <?php
                 // Conexión                        
                 include '../db.php';
-                session_start();
 
                 //Comprobar si existen vacantes
                 $conn = SQLConnect();
@@ -53,9 +61,9 @@
                                 <td>" . $vacant['fpdual'] . "</td>
                                 <td>
                                     <form>
-                                        <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
-                                        <a href='./vacant-actions/vacant-edit.php?id=" . $vacant['id-vacant'] ."'>Editar</a>
-                                        <a href='./vacant-actions/vacant-delete.php?id=" . $vacant['id-vacant'] ."'>Eliminar</a>
+                                        <a class='button' href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
+                                        <a class='button' href='./vacant-actions/vacant-edit.php?id=" . $vacant['id-vacant'] ."'>Editar</a>
+                                        <a class='button' href='./vacant-actions/vacant-delete.php?id=" . $vacant['id-vacant'] ."'>Eliminar</a>
                                     </form>
                                 </td>
                             </tr>";
@@ -77,7 +85,7 @@
     </main>
 
     <footer>
-        <p>Creado por Brian Carrillo</p>
+        <a class='closesession' href='../close-session.php'>Cerrar sesión</a>
     </footer>
 </body>
 </html>

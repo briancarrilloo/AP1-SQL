@@ -60,7 +60,7 @@
     </main>
 
     <footer>
-        <p>Creado por Brian Carrillo</p>
+        <a class='closesession' href='../close-session.php'>Cerrar sesión</a>
     </footer>
 </body>
 </html>
