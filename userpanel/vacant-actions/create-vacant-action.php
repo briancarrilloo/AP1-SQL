@@ -1,6 +1,6 @@
 <?php
     // Preparación                        
-    include 'db.php';
+    include '../../db.php';
     session_start();
 
     $title = $_POST['title'];
@@ -18,6 +18,6 @@
         echo "<script type='text/javascript'>alert('No se ha podido crear la vacante.');</script>";
     }
 
-    header("Location: ./panel-company.php");
+    header("Location: ../panel-company.php");
     SQLDisconnect($conn);
 ?>

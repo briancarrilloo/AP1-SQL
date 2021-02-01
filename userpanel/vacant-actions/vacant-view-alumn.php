@@ -42,19 +42,21 @@
                     <textarea name='descpuesto' id='descpuesto' cols='60' rows='7' readonly='yes'>" . $vacant['descrip-vacant'] . "</textarea>
                 </div>
                 <div class='field'>
-                    <p>FP Dual: </p>
-                    <textarea name='dual' id='dual' cols='2' rows='1' readonly='yes'>" . $vacant['fpdual'] . "</textarea>
-                </div>";
-
-                echo "<button class='BigButton'>Optar a la vacante</button>";
-                
-                echo "</form>";
-
-            echo "
-            <br>
-            <form action='../panel-company.php'>
-                <button>Cancelar</button>
-            </form>";
+                    <p>FP Dual: </p>";
+                if($vacant['fpdual'] = 1){
+                    echo "<textarea name='dual' id='dual' cols='2' rows='1' readonly='yes'>Si</textarea>";
+                } else {
+                    echo "<textarea name='dual' id='dual' cols='2' rows='1' readonly='yes'>No</textarea>";
+                }
+                    
+                echo "</div>";
+                echo "
+                <button class='BigButton'>Optar a la vacante</button>
+                </form>
+                <br>
+                <form action='../panel-alumn.php'>
+                    <button>Volver</button>
+                </form>";
             ?>
         </div>
     </main>

@@ -61,7 +61,7 @@
                                 <td>" . $vacant['fpdual'] . "</td>
                                 <td>
                                     <form>
-                                        <a class='button' href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
+                                        <a class='button' href='./vacant-actions/vacant-view-company.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
                                         <a class='button' href='./vacant-actions/vacant-edit.php?id=" . $vacant['id-vacant'] ."'>Editar</a>
                                         <a class='button' href='./vacant-actions/vacant-delete.php?id=" . $vacant['id-vacant'] ."'>Eliminar</a>
                                     </form>
@@ -78,7 +78,7 @@
                 SQLDisconnect($conn);
             ?>
             <br>
-            <form action="vacant-actions/create-vacant.php">
+            <form action="./vacant-actions/create-vacant.php">
                 <button class="BigButton">Crear nueva vacante</button>
             </form>
         </div>

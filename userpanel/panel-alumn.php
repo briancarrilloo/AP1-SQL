@@ -60,8 +60,8 @@
                                 <td>" . $vacant['fpdual'] . "</td>
                                 <td>
                                     <form>
-                                        <a class='button' href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
-                                        <a class='button' href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
+                                        <a class='button' href='./vacant-actions/vacant-view-alumn.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
+                                        <a class='button' href='./vacant-actions/vacant-view-alumn.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
                                     </form>
                                 </td>
                             </tr>";

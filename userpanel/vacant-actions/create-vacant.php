@@ -2,21 +2,21 @@
 <html lang="es">
 
 <?php
-    include '../check-session.php';
+    include '../../check-session.php';
     if(CheckSession(3)){
-        header( 'Location: ../session-expired.php' );
+        header( 'Location: ../../session-expired.php' );
     }
 ?>
 
 <head>
     <meta charset="utf-8">
     <title>Manuel Vázquez Montalbán</title>
-    <link rel="stylesheet" href="css/panel.css">
+    <link rel="stylesheet" href="../../css/panel.css">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="img/logo.png" alt="Logo">
+        <img class="logo" src="../../img/logo.png" alt="Logo">
         <h1>Crear una vacante</h1>
     </header>
 
@@ -47,14 +47,14 @@
                 <button class="BigButton" type="submit">Crear vacante</button>
             </form>
             <br>
-            <form action="panel-company.php">
+            <form action="../panel-company.php">
                 <button>Cancelar</button>
             </form>
         </div>
     </main>
 
     <footer>
-        <a class='closesession' href='../close-session.php'>Cerrar sesión</a>
+        <a class='closesession' href='../../close-session.php'>Cerrar sesión</a>
     </footer>
 </body>
 </html>
