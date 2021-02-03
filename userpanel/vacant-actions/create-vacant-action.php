@@ -20,4 +20,17 @@
 
     header("Location: ../panel-company.php");
     SQLDisconnect($conn);
+
+    //Comprobar archivo y crear con cabecera
+    if(!(file_exists('../../logs/LogVacantes.txt'))){
+        $myFile = fopen("../../logs/LogVacantes.txt", "a") or die ("El archivo no se ha podido crear.");
+        fwrite($myFile, "- - - Registro de eventos de vacantes - - -\n");
+        fclose($myFile);
+    }
+
+    //Añadir entrada log
+    $line = "La empresa " . $_SESSION['company'] . ", ha creado una vacante: " . $_POST['title'] . "\n";
+    $myFile = fopen("../../logs/LogVacantes.txt", "a") or die ("El archivo no se ha podido abrir.");
+    fwrite($myFile, $line);
+    fclose($myFile);
 ?>

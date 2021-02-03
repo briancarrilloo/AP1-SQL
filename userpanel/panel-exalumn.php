@@ -8,6 +8,12 @@
     }
 ?>
 
+<head>
+    <meta charset="utf-8">
+    <title>Manuel Vázquez Montalbán</title>
+    <link rel="stylesheet" href="../css/panel.css">
+</head>
+
 <body>
     <header>
         <img class="logo" src="../img/logo.png" alt="Logo">
@@ -19,7 +25,6 @@
             <?php
                 // Conexión                        
                 include '../db.php';
-                session_start();
 
                 //Comprobar si existen vacantes
                 $conn = SQLConnect();
@@ -54,9 +59,9 @@
                                 <td>" . $vacant['fpdual'] . "</td>
                                 <td>
                                     <form>
-                                    <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
-                                    <a href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
-                                </form>
+                                    <a class='button' href='./vacant-actions/vacant-view.php?id=" . $vacant['id-vacant'] ."'>Ver</a>
+                                    <a class='button' href='./vacant-actions/join-vacant.php?id=" . $vacant['id-vacant'] ."'>Optar</a>
+                                    </form>
                                 </td>
                             </tr>";
                         }

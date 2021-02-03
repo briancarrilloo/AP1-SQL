@@ -1,0 +1,8 @@
+- - - Registro de eventos de vacantes - - -
+La empresa ConsultingSL, ha creado una vacante: 
+La empresa ConsultingSL, ha creado una vacante: Administrador de BD
+La empresa ConsultingSL, ha eliminado la vacante 19
+La empresa ConsultingSL, ha eliminado la vacante 14
+La empresa ConsultingSL, ha creado una vacante: Test
+La empresa ConsultingSL, ha eliminado la vacante 20
+La empresa ConsultingSL, ha modificado la vacante 18
