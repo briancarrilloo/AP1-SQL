@@ -8,13 +8,15 @@
     $password = $_POST['password'];
     $observations = $_POST['observations'];
 
+    echo "registerform.php";
+
     //Comprobar si el usuario existe
     if (UserExists($user)) {
         //El usuario existe
         echo "El usuario $user ya existe.";
     } else {
         //No existe. Insertar usuario
-        $sql = "insert into users values('$user', '$email', '$password', '$role', '$company', '$observations');";
+        $sql = "insert into briancarrillo_mvm.Users values('$user', '$email', '$password', '$role', '$company', '$observations');";
         if (SQLExecute($sql)) {
             echo 'El usuario se ha creado correctamente.';
             header('Location: ../index.html');
@@ -38,7 +40,7 @@
     function UserExists($user)
     {
         $conn = SQLConnect();
-        $sql = "select * from mvm.users where username = '$user';";
+        $sql = "select * from briancarrillo_mvm.Users where username = '$user';";
         if ($resultado = $conn->query($sql)) {
             return $resultado->num_rows;
         }
