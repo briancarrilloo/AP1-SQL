@@ -2,8 +2,6 @@
     session_start();
     $id = $_GET['id'];
 
-    echo $id;
-
     //Comprobar archivo y crear con cabecera
     if(!(file_exists('../../logs/RegistroVacantes.txt'))){
         $myFile = fopen("../../logs/RegistroVacantes.txt", "a") or die ("El archivo no se ha podido crear.");
@@ -17,4 +15,6 @@
     $myFile = fopen("../../logs/RegistroVacantes.txt", "a") or die ("El archivo no se ha podido abrir.");
     fwrite($myFile, $line);
     fclose($myFile);
+
+
 ?>

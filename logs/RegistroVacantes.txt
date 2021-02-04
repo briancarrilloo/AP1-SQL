@@ -1,3 +1,4 @@
 - - - Participantes registrados en las vacantes - - -
 El usuario bcarrillo, se ha registrado candidato para la vacante 14
 El usuario bcarrillo, se ha registrado candidato para la vacante 16
+El usuario kevin, se ha registrado candidato para la vacante 18

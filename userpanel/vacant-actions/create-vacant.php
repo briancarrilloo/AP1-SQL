@@ -38,7 +38,7 @@
                     <textarea name="descpuesto" id="descpuesto" cols="60" rows="7"></textarea>
                 </div>
                 <div class="field">
-                    <p>FP Dual: </p>
+                    <p>Prácticas: </p>
                     <select name="dual" id="dual">
                         <option value=0>No</option>
                         <option value=1>Si</option>

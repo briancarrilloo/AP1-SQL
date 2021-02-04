@@ -42,7 +42,7 @@
                     <textarea name='descpuesto' id='descpuesto' cols='60' rows='7' readonly='yes'>" . $vacant['descrip-vacant'] . "</textarea>
                 </div>
                 <div class='field'>
-                    <p>FP Dual: </p>";
+                    <p>Prácticas: </p>";
                 if($vacant['fpdual'] = 1){
                     echo "<textarea name='dual' id='dual' cols='2' rows='1' readonly='yes'>Si</textarea>";
                 } else {

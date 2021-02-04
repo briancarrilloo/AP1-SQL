@@ -41,7 +41,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Título</th>
-                            <th>Dual</th>
+                            <th>Prácticas</th>
                             <th>Acciones</th>
                         </tr>";
 

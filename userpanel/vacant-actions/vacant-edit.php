@@ -42,6 +42,7 @@
                     <p>Descripción del puesto: </p>
                     <textarea name='descpuesto' id='descpuesto' cols='60' rows='7'>" . $vacant['descrip-vacant'] . "</textarea>
                 </div>
+                <p>Prácticas:</p>
                 <select name='dual' id='dual'>
                         <option value=0>No</option>
                         <option value=1>Si</option>

@@ -25,7 +25,6 @@
             <?php
                 // Conexión                        
                 include '../db.php';
-                // session_start();
 
                 //Comprobar si existen vacantes
                 $conn = SQLConnect();
@@ -40,7 +39,7 @@
                         <tr>
                             <th>Título</th>
                             <th>Empresa</th>
-                            <th>Dual</th>
+                            <th>Prácticas</th>
                             <th>Acciones</th>
                         </tr>";
 
