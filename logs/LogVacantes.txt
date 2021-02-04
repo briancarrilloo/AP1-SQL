@@ -6,3 +6,6 @@ La empresa ConsultingSL, ha eliminado la vacante 14
 La empresa ConsultingSL, ha creado una vacante: Test
 La empresa ConsultingSL, ha eliminado la vacante 20
 La empresa ConsultingSL, ha modificado la vacante 18
+La empresa EmpresaSA, ha modificado la vacante 15
+La empresa EmpresaSA, ha creado una vacante: Prueba
+La empresa EmpresaSA, ha eliminado la vacante 21

@@ -51,10 +51,12 @@
                     
                 echo "</div>";
                 echo "
-                <button class='BigButton'>Optar a la vacante</button>
+                <div class='field'>
+                    <a class='bigbutton' href='./join-vacant.php?id=" . $id ."'>Optar a la vacante</a>
+                </div>
                 </form>
                 <br>
-                <form action='../panel-alumn.php'>
+                <form action='../panel-exalumn.php'>
                     <button>Volver</button>
                 </form>";
             ?>

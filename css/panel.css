@@ -48,6 +48,10 @@ div.loginfield {
     margin-bottom: 20px;
 }
 
+div.field {
+    margin-bottom: 20px;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -105,7 +109,7 @@ a.button{
 }
 
 a.button:hover{
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(235, 235, 235);
     text-decoration: none;
 }
 
@@ -116,7 +120,20 @@ a.closesession{
 }
 
 a.closesession:hover{
-    color: rgb(173, 173, 173);
+    color: rgb(235, 235, 235);
     text-decoration: none;
     text-align: center;
+}
+
+a.bigbutton{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+a.bigbutton:hover{
+    background-color: rgb(235, 235, 235);
+    text-decoration: none;
 }
