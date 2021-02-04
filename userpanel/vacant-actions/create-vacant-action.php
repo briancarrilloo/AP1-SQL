@@ -29,7 +29,7 @@
     }
 
     //Añadir entrada log
-    $line = "La empresa " . $_SESSION['company'] . ", ha creado una vacante: " . $_POST['title'] . "\n";
+    $line = "La empresa " . $_SESSION['company'] . ", ha creado una vacante: " . $_POST['title'] . ' ' . date("d-m-Y H:i:s") . "\n";
     $myFile = fopen("../../logs/LogVacantes.txt", "a") or die ("El archivo no se ha podido abrir.");
     fwrite($myFile, $line);
     fclose($myFile);

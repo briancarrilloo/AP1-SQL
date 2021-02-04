@@ -10,7 +10,7 @@
     }
 
     // Añadir registros
-    $line = "El usuario " . $_SESSION['user'] . ", se ha registrado candidato para la vacante " . $_GET['id'] . "\n";
+    $line = "El usuario " . $_SESSION['user'] . ", se ha registrado candidato para la vacante " . $_GET['id'] . ' ' . date("d-m-Y H:i:s") . "\n";
     
     $myFile = fopen("../../logs/RegistroVacantes.txt", "a") or die ("El archivo no se ha podido abrir.");
     fwrite($myFile, $line);
