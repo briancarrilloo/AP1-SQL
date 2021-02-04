@@ -9,3 +9,7 @@ La empresa ConsultingSL, ha modificado la vacante 18
 La empresa EmpresaSA, ha modificado la vacante 15
 La empresa EmpresaSA, ha creado una vacante: Prueba
 La empresa EmpresaSA, ha eliminado la vacante 21
+La empresa EmpresaSA, ha eliminado la vacante 15
+La empresa EmpresaSA, ha creado una vacante: Técnico de campo
+La empresa EmpresaSA, ha modificado la vacante 22
+La empresa EmpresaSA, ha modificado la vacante 22

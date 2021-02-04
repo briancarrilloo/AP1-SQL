@@ -40,7 +40,7 @@
 
     function CheckLogin($user, $password){
         $conn = SQLConnect();
-        $sql = "select * from mvm.users where username = '$user' and password = '$password';";
+        $sql = "select * from briancarrillo_mvm.Users where username = '$user' and password = '$password';";
         if ($resultado = $conn->query($sql)) {
             return $resultado->num_rows;
         }
@@ -50,7 +50,7 @@
     function GetRole($user){
         $conn = SQLConnect();
         //Seleccionar rol
-        $sql = "Select roleid from mvm.users where username = '$user';";
+        $sql = "Select roleid from briancarrillo_mvm.Users where username = '$user';";
         $response = mysqli_query($conn, $sql);
         $result = mysqli_fetch_assoc($response);
 
@@ -61,7 +61,7 @@
     function GetCompany($user){
         $conn = SQLConnect();
         //Seleccionar empresa
-        $sql = "Select company from mvm.users where username = '$user';";
+        $sql = "Select company from briancarrillo_mvm.Users where username = '$user';";
         $response = mysqli_query($conn, $sql);
         $result = mysqli_fetch_assoc($response);
 
